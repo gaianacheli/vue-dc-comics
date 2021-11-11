@@ -1,6 +1,6 @@
 <template>
     <div class="site_footer">
-        <div class="footer">
+        <div class="footer_one">
             <div class="link_footer">
                 <div class="comics_footer">
                     <h3 class="titoletto">DC COMICS</h3>
@@ -49,6 +49,30 @@
                </div> 
            </div>
            <div class="footer_img">
+           </div>   
+        </div>
+        <div class="footer_two">
+             <div class="follow">
+               <div class="entra">
+                   <button class="btn">SIGN-UP NOW!</button>
+               </div>
+               <div class="social">
+                   <h2 class="follow_social">FOLLOW US</h2>
+                   <img class="logo_social" src="../assets/footer-facebook.png" alt="">
+                   <img class="logo_social" src="../assets/footer-twitter.png" alt="">
+                   <img class="logo_social" src="../assets/footer-youtube.png" alt="">
+                   <img class="logo_social" src="../assets/footer-pinterest.png" alt="">
+                   <img class="logo_social" src="../assets/footer-periscope.png" alt="">
+                 
+                 
+                   
+                   
+                   
+
+                   
+                  
+                   
+               </div>
            </div>
         </div>
         
@@ -63,7 +87,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.footer {
+.footer_one {
     background-image: url('../assets/footer-bg.jpg');
     display: flex;
     justify-content: space-around;
@@ -94,6 +118,32 @@ export default {
     background-image: url(/img/dc-logo-bg.f4404ce9.png);
     background-size: 345px;
     background-position: center;
+ }
+ .footer_two{
+     background-color: rgba(48, 48, 48, 1);
+ }
+ .follow {
+     display: flex;
+     justify-content: space-around;
+     padding: 2rem;
+ }
+ .btn{
+     background-color: rgba(48, 48, 48, 1);
+     border-color:rgba(2, 130, 249, 1) ;
+     padding: 0.5rem;
+     color: white;
+ }
+ .social{
+     display: flex;
+     align-content: center;
+ }
+ .logo_social {
+     padding: 0rem 0.5rem;
+ }
+ .follow_social {
+     color:rgba(17, 124, 249, 1);
+     margin: 0rem 1rem;
+     font-family: 'Cantarell', sans-serif;
  }
  
 
