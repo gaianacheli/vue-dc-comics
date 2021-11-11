@@ -28,7 +28,7 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400&display=swap');
 .navbar{
-  padding: 1.5rem;
+  padding-top: 1.5rem;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -48,7 +48,7 @@ export default {
     &:hover{
       color: rgba(2, 130, 249, 1);
       border-bottom: 4px solid rgba(2, 130, 249, 1);
-      padding-bottom: 1.5rem;
+      padding-bottom: 2rem;
     }
   }
 }
@@ -56,5 +56,7 @@ export default {
 }
 .logo{
   width: 70px;
+  padding-bottom: 1rem;
+  
 }
 </style>
