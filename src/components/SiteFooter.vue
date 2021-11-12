@@ -136,6 +136,7 @@ export default {
      font-family: 'Open Sans Condensed', sans-serif;
  }
  .social{
+     width: 500px;
      display: flex;
      align-content: center;
  }
@@ -143,6 +144,7 @@ export default {
      padding: 0rem 0.5rem;
  }
  .follow_social {
+    
      color:rgba(17, 124, 249, 1);
      margin: 0rem 1rem;
      font-family: 'Open Sans Condensed', sans-serif;
