@@ -1,6 +1,9 @@
 <template>
     <div class="site_main">
-        <div class="conteiner">
+        <div class="jumbo">
+        </div>
+
+        <div class="card_list">
             <div class="content_card">
                  <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
             </div>
@@ -124,7 +127,13 @@ export default {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
-.conteiner{
+.jumbo {
+    width: 100%;
+    height: 265px;
+    background-image: url('../assets/jumbotron.jpg');
+    background-size: cover;
+}
+.card_list{
     width: 100%;
     background-color: rgba(28, 28, 28, 1);
     display: flex;
