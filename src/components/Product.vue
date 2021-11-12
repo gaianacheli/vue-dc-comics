@@ -34,6 +34,7 @@ export default {
          color: white;
          margin-top: 10px;
          font-family: 'Cantarell', sans-serif;
+          text-transform: uppercase;
      }
 
  }
