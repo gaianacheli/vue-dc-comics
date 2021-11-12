@@ -1,7 +1,9 @@
 <template>
     <div class="site_main">
         <div class="conteiner">
-            <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
+            <div class="content_card">
+                 <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
+            </div>
         </div> 
         <div class="content">
             <div class="card">
@@ -123,15 +125,14 @@ export default {
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
 .conteiner{
-    height: 100px;
     width: 100%;
     background-color: rgba(28, 28, 28, 1);
     display: flex;
-    align-items: center;
-    p{
-        color: white;
-        font-size: 20px;
-          margin: 300px;
+    justify-content: center;
+    .content_card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 720px;
     }
 }
 .content {
@@ -143,6 +144,7 @@ export default {
         display: flex;
         align-items: center;
         padding: 2rem;
+        
         
     }
     .img_card{
