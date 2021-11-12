@@ -1,7 +1,7 @@
 <template>
     <div class="site_main">
         <div class="conteiner">
-            <Product v-for="card in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
+            <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
         </div> 
         <div class="content">
             <div class="card">
@@ -30,12 +30,13 @@
 </template>
 
 <script>
+
 import Product from "./Product.vue"
+
 export default {
-  name: 'SiteMain',
-  Data() {
-      return {
-           cards: [
+  data() {
+      return{
+       cards:   [
   {
     "thumb": "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2018/09/AC1000_DLX_162-001_HD_5ba13723281ab0.37845353.jpg?itok=ZsI-C5eX",
     "price": "$19.99",
@@ -107,15 +108,16 @@ export default {
     "price": "$16.99",
     "series": "Catwoman",
     "type": "graphic novel"
-  }
+  },
 ]
-
       }
   },
+
   components: {
       Product,
-  },
+  }
 }
+
 </script>
 
 <style scoped lang="scss">
