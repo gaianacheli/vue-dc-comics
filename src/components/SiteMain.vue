@@ -130,6 +130,7 @@ export default {
 
 <style scoped lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 .jumbo {
     width: 100%;
     height: 265px;
@@ -147,8 +148,8 @@ export default {
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 12px;
-    font-family: 'Cantarell', sans-serif;
+    font-size: 15px;
+    font-family: 'Open Sans Condensed', sans-serif;
     }
 }
 .card_list{
@@ -172,6 +173,7 @@ export default {
         color: white;
         background-color:rgba(2, 130, 249, 1);
         border: none;
+        font-family: 'Open Sans Condensed', sans-serif;
    
     }
 .content {

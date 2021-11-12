@@ -112,6 +112,7 @@ export default {
 }
 .titoletto{
     color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans Condensed', sans-serif;
 }
  .footer_img{
      width: 346px;
@@ -132,6 +133,7 @@ export default {
      border-color:rgba(2, 130, 249, 1) ;
      padding: 0.5rem;
      color: white;
+     font-family: 'Open Sans Condensed', sans-serif;
  }
  .social{
      display: flex;
@@ -143,7 +145,7 @@ export default {
  .follow_social {
      color:rgba(17, 124, 249, 1);
      margin: 0rem 1rem;
-     font-family: 'Cantarell', sans-serif;
+     font-family: 'Open Sans Condensed', sans-serif;
  }
  
 
