@@ -1,12 +1,15 @@
 <template>
     <div class="site_main">
         <div class="jumbo">
+            <div class="targetta">CURRENT SERIES</div>
         </div>
-
         <div class="card_list">
             <div class="content_card">
                  <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
             </div>
+            <div class="button">
+                     <button class="btn">LOAD MORE</button>
+           </div>
         </div> 
         <div class="content">
             <div class="card">
@@ -132,18 +135,45 @@ export default {
     height: 265px;
     background-image: url('../assets/jumbotron.jpg');
     background-size: cover;
+    position: relative;
+    .targetta{
+    width: 131px;
+    height: 32px;
+    background-color:  rgba(2, 130, 249, 1);
+    position: absolute;
+    left: 194px;
+    top: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-family: 'Cantarell', sans-serif;
+    }
 }
 .card_list{
     width: 100%;
     background-color: rgba(28, 28, 28, 1);
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .content_card{
     display: flex;
     flex-wrap: wrap;
-    width: 720px;
+    width: 921px;
+    padding-top: 2rem;
+
     }
 }
+ .btn {
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        width: 140px;
+        color: white;
+        background-color:rgba(2, 130, 249, 1);
+        border: none;
+   
+    }
 .content {
     width: 100%;
     background-color: rgba(2, 130, 249, 1);
@@ -165,6 +195,7 @@ export default {
         font-size: 12px;
         font-family: 'Cantarell', sans-serif;
     }
+   
 }
 
 

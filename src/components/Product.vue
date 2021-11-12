@@ -18,7 +18,7 @@ export default {
 
 <style scoped lang="scss">
  .card{
-     width: 120px;
+     width: 152px;
      padding: 1rem;
      display: flex;
      flex-direction: column;
@@ -26,13 +26,14 @@ export default {
      
 
      img{
-         width: 100px;
-         height: 100px;
+         width: 130px;
+         height: 130px;
      }
      h3 {
-         font-size: 8px;
+         font-size: 13px;
          color: white;
          margin-top: 10px;
+         font-family: 'Cantarell', sans-serif;
      }
 
  }
