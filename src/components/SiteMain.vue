@@ -1,18 +1,18 @@
 <template>
     <div class="site_main">
         <div class="jumbo">
-            <div class="targetta">CURRENT SERIES</div>
+            <div class="targetta flex">CURRENT SERIES</div>
         </div>
-        <div class="card_list">
-            <div class="content_card">
+        <div class="card_list flex">
+            <div class="content_card flex">
                  <Product v-for="(card) in cards" :key="card.series" :image="card.thumb" :title="card.series"/>
             </div>
             <div class="button">
                      <button class="btn">LOAD MORE</button>
            </div>
         </div> 
-        <div class="content">
-            <div class="card">
+        <div class="content flex">
+            <div class="card flex">
                 <img class="img_card" src="../assets/buy-comics-digital-comics.png" alt="">
                 <p>DIGITAL COMICS</p>
             </div>
@@ -129,6 +129,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/variabili.scss";
+@import "../assets/style/common.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap');
 .jumbo {
@@ -140,11 +143,10 @@ export default {
     .targetta{
     width: 131px;
     height: 32px;
-    background-color:  rgba(2, 130, 249, 1);
+    background-color: $dc_primary_color;
     position: absolute;
     left: 194px;
     top: 255px;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
@@ -155,11 +157,9 @@ export default {
 .card_list{
     width: 100%;
     background-color: rgba(28, 28, 28, 1);
-    display: flex;
     align-items: center;
     flex-direction: column;
     .content_card{
-    display: flex;
     flex-wrap: wrap;
     width: 921px;
     padding-top: 2rem;
@@ -171,18 +171,16 @@ export default {
         margin-bottom: 2rem;
         width: 140px;
         color: white;
-        background-color:rgba(2, 130, 249, 1);
+        background-color:$dc_primary_color;
         border: none;
         font-family: 'Open Sans Condensed', sans-serif;
    
     }
 .content {
     width: 100%;
-    background-color: rgba(2, 130, 249, 1);
-    display: flex;
+    background-color: $dc_primary_color;
     justify-content: center;
     .card{
-        display: flex;
         align-items: center;
         padding: 2rem;
         

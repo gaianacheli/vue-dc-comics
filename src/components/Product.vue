@@ -1,5 +1,5 @@
 <template>
-<div class="card">
+<div class="card flex">
       <img :src="image" alt="">
       <h3>{{title}}</h3>
   </div>
@@ -17,10 +17,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/variabili.scss";
+@import "../assets/style/common.scss";
  .card{
      width: 152px;
      padding: 1rem;
-     display: flex;
      flex-direction: column;
      align-items: flex-start;
      

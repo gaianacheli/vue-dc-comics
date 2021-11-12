@@ -1,6 +1,6 @@
 <template>
   <div class="site_header">
-    <nav class="navbar">
+    <nav class="navbar flex">
       <img class="logo" src="../assets/dc-logo.png" alt="">
       <ul>
         <li><a href="#">CHARACTERS</a></li>
@@ -26,11 +26,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+@import "../assets/style/variabili.scss";
+@import "../assets/style/common.scss";
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@400&display=swap');
 .navbar{
   padding-top: 1.5rem;
   width: 100%;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   
@@ -46,8 +47,8 @@ export default {
     font-size: 11px;
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     &:hover{
-      color: rgba(2, 130, 249, 1);
-      border-bottom: 4px solid rgba(2, 130, 249, 1);
+      color: $dc_primary_color;
+      border-bottom: 4px solid $dc_primary_color;
       padding-bottom: 2rem;
     }
   }

@@ -1,7 +1,7 @@
 <template>
     <div class="site_footer">
-        <div class="footer_one">
-            <div class="link_footer">
+        <div class="footer_one flex">
+            <div class="link_footer flex">
                 <div class="comics_footer">
                     <h3 class="titoletto">DC COMICS</h3>
                     <ul>
@@ -12,6 +12,11 @@
                         <li>Games</li>
                         <li>Videos</li>
                         <li>News</li>
+                    </ul>
+                    <h3 class="titoletto">SHOP</h3>
+                    <ul>
+                        <li>Shop DC</li>
+                        <li>Shop DC Collectibles</li>
                     </ul>
                </div> 
                 <div class="comics_footer">
@@ -30,7 +35,7 @@
                         <li>Contact Us</li>
                     </ul>
                </div> 
-                <div class="comics_footer">
+                <div class="comics_footer flex">
                     <h3 class="titoletto">SITES</h3>
                     <ul>
                         <li>DC</li>
@@ -40,23 +45,16 @@
                         <li>DC Power Visa</li>
                     </ul>
                </div> 
-                <div class="comics_footer shop">
-                    <h3 class="titoletto">SHOP</h3>
-                    <ul>
-                        <li>Shop DC</li>
-                        <li>Shop DC Collectibles</li>
-                    </ul>
-               </div> 
            </div>
            <div class="footer_img">
            </div>   
         </div>
         <div class="footer_two">
-             <div class="follow">
+             <div class="follow flex">
                <div class="entra">
                    <button class="btn">SIGN-UP NOW!</button>
                </div>
-               <div class="social">
+               <div class="social flex">
                    <h2 class="follow_social">FOLLOW US</h2>
                    <img class="logo_social" src="../assets/footer-facebook.png" alt="">
                    <img class="logo_social" src="../assets/footer-twitter.png" alt="">
@@ -87,20 +85,19 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import "../assets/style/variabili.scss";
+@import "../assets/style/common.scss";
 .footer_one {
     background-image: url('../assets/footer-bg.jpg');
-    display: flex;
     justify-content: space-around;
     
 }
 .link_footer {
     width: 400px;
-    display: flex;
     flex-wrap: wrap;
     padding: 1rem;
 }
 .comics_footer {
-    display: flex;
     flex-direction: column;
     text-align: left;
     padding: 1rem;
@@ -115,7 +112,7 @@ export default {
     font-family: 'Open Sans Condensed', sans-serif;
 }
  .footer_img{
-     width: 346px;
+    width: 346px;
     background-image: url(/img/dc-logo-bg.f4404ce9.png);
     background-size: 345px;
     background-position: center;
@@ -124,28 +121,25 @@ export default {
      background-color: rgba(48, 48, 48, 1);
  }
  .follow {
-     display: flex;
      justify-content: space-around;
      padding: 2rem;
  }
  .btn{
      background-color: rgba(48, 48, 48, 1);
-     border-color:rgba(2, 130, 249, 1) ;
+     border-color:$dc_primary_color ;
      padding: 0.5rem;
      color: white;
      font-family: 'Open Sans Condensed', sans-serif;
  }
  .social{
      width: 500px;
-     display: flex;
      align-content: center;
  }
  .logo_social {
      padding: 0rem 0.5rem;
  }
  .follow_social {
-    
-     color:rgba(17, 124, 249, 1);
+     color:$dc_primary_color;
      margin: 0rem 1rem;
      font-family: 'Open Sans Condensed', sans-serif;
  }
